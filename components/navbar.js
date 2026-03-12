@@ -1,6 +1,6 @@
 const Navbar = () => `
   <nav class="navbar">
-    <a href="/index.html" class="logo">ROSah Media</a>
+    <a href="/index.html" class="logo">Rosah Media</a>
     <div class="menu-toggle" id="mobile-menu-btn">☰</div>
     <ul class="nav-links" id="nav-links">
       <li><a href="/index.html">Início</a></li>
