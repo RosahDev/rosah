@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Mim | ROSah Media</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <style>
+    .about-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; margin-top: 2rem; }
+    .skills-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1rem; }
+    .skill-tag { background: rgba(124, 58, 237, 0.2); border: 1px solid var(--neon-purple); padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; }
+    @media (min-width: 768px) { .about-grid { grid-template-columns: 1fr 2fr; } }
+  </style>
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main class="container fade-in">
+    <h1>Sobre Mim</h1>
+    <div class="about-grid">
+      <div class="about-image">
+        <div style="width: 100%; height: 400px; background: var(--bg-light); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);"></div>
+      </div>
+      <div class="about-content">
+        <h2>Lucas Rosa</h2>
+        <p style="color: var(--neon-purple); margin-bottom: 1rem;">Fundador da ROSah Media & Revwheelz</p>
+        <p>Direto de Araraquara, SP, transformo minha paixão por design, motores e linhas de código em experiências visuais únicas. Especialista em fotografia automotiva, captura da essência de veículos JDM e de luxo, além de desenvolver soluções web imersivas.</p>
+        
+        <h3 style="margin-top: 2rem;">Stack & Ferramentas</h3>
+        <div class="skills-tags">
+          <span class="skill-tag">HTML5 / CSS3</span>
+          <span class="skill-tag">JavaScript / React</span>
+          <span class="skill-tag">Supabase</span>
+          <span class="skill-tag">Photoshop / Lightroom</span>
+          <span class="skill-tag">Premiere Pro</span>
+          <span class="skill-tag">Blender / 3D Modeling</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="../components/navbar.js"></script>
+  <script src="../components/footer.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

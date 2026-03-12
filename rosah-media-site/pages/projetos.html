@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos | ROSah Media</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    .filters { display: flex; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+    .search-bar { width: 100%; max-width: 400px; padding: 0.8rem; background: var(--bg-light); border: 1px solid rgba(255,255,255,0.1); color: white; border-radius: 4px; }
+    .search-bar:focus { outline: none; border-color: var(--neon-purple); box-shadow: var(--glow-purple); }
+  </style>
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+
+  <main class="container fade-in">
+    <h1>Meu Portfólio</h1>
+    
+    <div class="filters">
+      <input type="text" id="search-input" class="search-bar" placeholder="Buscar projetos...">
+      <button class="btn btn-outline filter-btn" data-category="all">Todos</button>
+      <button class="btn btn-outline filter-btn" data-category="fotografia">Fotografia</button>
+      <button class="btn btn-outline filter-btn" data-category="video">Vídeo</button>
+      <button class="btn btn-outline filter-btn" data-category="programacao">Programação</button>
+      <button class="btn btn-outline filter-btn" data-category="design">Design</button>
+    </div>
+
+    <div class="projects-grid" id="projects-container"></div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script src="../js/supabaseClient.js"></script>
+  <script src="../components/navbar.js"></script>
+  <script src="../components/footer.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/projects.js"></script>
+</body>
+</html>
