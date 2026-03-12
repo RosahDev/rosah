@@ -1,7 +1,6 @@
 /**
- * Componente Project Card - Design Premium Automotivo
- * A imagem é o foco absoluto com zoom slow no hover
- * Texto em bloco escuro minimalista abaixo
+ * Project Card Component - Modern & Clean
+ * Premium design with smooth hover effects and pill-shaped category badge
  */
 const ProjectCard = (project) => `
   <a href="/pages/projeto.html?id=${project.id}" class="project-card fade-in">
